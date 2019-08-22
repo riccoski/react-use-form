@@ -23,8 +23,8 @@
     "typescript": "^3.5.3"
   },
   "scripts": {
-    "prepare": "yarn run build",
-    "install": "yarn run build",
+    "prepare": "yarn && yarn build",
+    "install": "yarn && yarn build",
     "build": "tsc",
     "format": "prettier --write \"src/**/*.ts\" \"src/**/*.js\"",
     "lint": "tslint -p tsconfig.json"
