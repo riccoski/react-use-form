@@ -23,6 +23,7 @@
     "typescript": "^3.5.3"
   },
   "scripts": {
+    "prepare": "npm run build",
     "build": "tsc",
     "format": "prettier --write \"src/**/*.ts\" \"src/**/*.js\"",
     "lint": "tslint -p tsconfig.json"
