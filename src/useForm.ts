@@ -1,6 +1,6 @@
 import { useCallback, useEffect, useMemo, useReducer } from "react";
-import isEqual from "lodash/isEqual";
-import set from "lodash/set";
+const isEqual = require("lodash/isEqual");
+const set = require("lodash/set");
 
 interface Props {
   initialValues?: any;
