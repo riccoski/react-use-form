@@ -1,8 +1,14 @@
 # react-use-form
 
-# Quick start
+## Install
 
-``` javascript
+```bash
+yarn add --save riccoski/react-use-form
+```
+
+## Usage
+
+```javascript
 import React from "react";
 import useForm from "react-use-form";
 import * as yup from "yup";
@@ -37,12 +43,14 @@ function App() {
         name="password"
         placeholder="Password"
       />
-      <button type="submit">
-        Log in
-      </button>
+      <button type="submit">Log in</button>
     </form>
   );
 }
 
 export default App;
 ```
+
+## License
+
+MIT © [riccoski](https://github.com/riccoski)

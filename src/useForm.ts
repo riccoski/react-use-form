@@ -2,7 +2,7 @@ import { useCallback, useEffect, useMemo, useReducer } from "react";
 import isEqual from "lodash/isEqual";
 import set from "lodash/set";
 
-interface IUseForm {
+interface Props {
   initialValues?: any;
   onReset?: any;
   onSubmit: any;
@@ -16,12 +16,12 @@ enum ActionType {
   SET_VALUE = "SET_VALUE"
 }
 
-interface IState {
+interface State {
   errors: any;
   values: any;
 }
 
-interface IAction {
+interface Actions {
   type: ActionType;
   payload?: any;
 }
@@ -30,16 +30,15 @@ function useForm({
   initialValues = {},
   onReset,
   onSubmit,
-  validate,
   validationSchema
-}: IUseForm) {
+}: Props) {
   const initialState = {
     errors: {},
     isValid: false,
     values: initialValues
   };
 
-  function reducer(state: IState, { payload, type }: IAction) {
+  function reducer(state: State, { payload, type }: Actions) {
     switch (type) {
       case "RESET":
         return { ...initialState };
