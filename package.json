@@ -1,5 +1,5 @@
 {
-  "name": "react-use-form",
+  "name": "@riccoski/react-use-form",
   "version": "0.0.2",
   "description": "A hook for using forms in React",
   "author": "Ricco Sobers",
