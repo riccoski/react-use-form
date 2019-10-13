@@ -128,9 +128,9 @@ function useForm({
   }
 
   const handleChange = useCallback(e => {
-    const { name, value } = e.target;
+    const { checked, name, type, value } = e.target;
 
-    setFieldValue(name, value);
+    setFieldValue(name, type === "checkbox" ? checked : value);
   }, []);
 
   const handleSubmit = useCallback(
