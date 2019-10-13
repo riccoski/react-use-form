@@ -3,7 +3,7 @@
 ## Install
 
 ```bash
-yarn add --save riccoski/react-use-form
+yarn add --save @riccoski/react-use-form
 ```
 
 ## Usage
