@@ -23,6 +23,7 @@ jobs:
   publish-npm:
     needs: build
     runs-on: ubuntu-latest
+    echo: ${{secrets.npm_token}}
     steps:
       - uses: actions/checkout@v1
       - uses: actions/setup-node@v1
